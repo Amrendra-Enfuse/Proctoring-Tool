@@ -132,6 +132,9 @@ const Exam = ({
   return (
     <div className="exam-container">
       <div className="left-column">
+        <div className="image-capture">
+          <WebLiveCapture />
+        </div>
         <div className="exam-details">
           <h3 className="title-heading">Student Details</h3>
           <div className="details">
@@ -146,7 +149,6 @@ const Exam = ({
           <h2>Warning: {warningCnt}</h2>
           <h2>Message: {showMessage}</h2>
         </div>
-        {/* <WebLiveCapture /> */}
         <div className="form" id="form-blur">
           <h2 className="title-heading">{examName}</h2>
           <iframe title={examName} className="form-link" src={formLink}>
